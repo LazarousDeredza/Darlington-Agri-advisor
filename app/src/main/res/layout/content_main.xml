@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background22"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <fragment
+        android:id="@+id/nav_host_fragment_content_main"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/mobile_navigation"
+
+
+        />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="Agri-Business Advisor"
+                  android:textColor="#DDBEBE"
+                   android:textSize="25sp"
+                    style="@style/viewParent.headerText" />
+
+                <TextView
+                    android:text="We Are Here to help you make the best out of your farm"
+                    android:textColor="#DDBEBE"
+                    style="@style/viewParent.headerText.contentText"
+                    android:layout_marginBottom="20dp"/>
+
+
+                <!--Example with RelativeLayout and Gradient Drawable -->
+                <!-- for Recycler view use any of the layout as model-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="15dp"
+
+                    app:cardPreventCornerOverlap="true"
+                    android:id="@+id/mushroom"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="100dp"
+                        android:background="@drawable/home_gradient_maths"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/textViewSub1Title"
+                            style="@style/viewParent.headerText.HomeCardTitle"
+                            android:text="Mushroom"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            style="@style/viewParent.headerText.homeCardContent"
+                            android:layout_below="@id/textViewSub1Title"
+                            android:text="Mushoroom Production ,\nfor beginners" />
+
+                        <ImageView
+                            style="@style/homeCardImage"
+                            android:maxHeight="90dp"
+                            android:src="@drawable/onlinepngtools" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <!--if the second one is used as model for recyclerView, refer:
+                https://appsnipp.com/gradient-layout-for-dynamic-gradients-in-android-without-drawable-library/
+                -->
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="15dp"
+                    android:id="@+id/beekeeping"
+                    app:cardPreventCornerOverlap="true"
+                    android:layout_marginTop="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/side_nav_bar"
+                        android:layout_height="match_parent"
+                        android:minHeight="100dp"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/textViewSub2Title"
+                            style="@style/viewParent.headerText.HomeCardTitle"
+                            android:textSize="18sp"
+                            android:text="Bee Keeping With Katie Lloyd" />
+
+                        <TextView
+                            style="@style/viewParent.headerText.homeCardContent"
+                            android:layout_below="@id/textViewSub2Title"
+                            android:text="Study nature, love nature,\nand be the best bee keeper" />
+
+                        <ImageView
+                            style="@style/homeCardImage"
+                            android:maxHeight="90dp"
+                            android:src="@drawable/onlinepngtools1" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="15dp"
+                    app:cardPreventCornerOverlap="true"
+                    android:id="@+id/modelfarmer"
+                    android:layout_marginTop="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/home_gradient_maths"
+
+                        android:minHeight="100dp"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/textViewSub4Title"
+                            style="@style/viewParent.headerText.HomeCardTitle"
+                            android:textSize="18sp"
+                            android:text="Model Farmer" />
+
+                        <TextView
+                            style="@style/viewParent.headerText.homeCardContent"
+                            android:layout_below="@id/textViewSub4Title"
+                            android:text="Get the best info,\non model farming" />
+
+                        <ImageView
+                            style="@style/homeCardImage"
+                            android:maxHeight="90dp"
+                            android:src="@drawable/onlinepngtools6" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="15dp"
+                    app:cardPreventCornerOverlap="true"
+                    android:id="@+id/getinvolved"
+                    android:layout_marginTop="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/side_nav_bar"
+
+                        android:minHeight="100dp"
+                        android:padding="10dp">
+
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:layout_height="match_parent" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView4"
+                                        android:textAlignment="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/_18sdp"
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold"
+                                        android:text="Contact Info" />
+                                </LinearLayout>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/_15sdp"
+                                android:layout_height="match_parent" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="@dimen/_30sdp"
+                                            android:layout_height="@dimen/_30sdp"
+                                            android:id="@+id/imgtwitter"
+                                            android:src="@drawable/twitter"/>
+
+                                        <TextView
+                                            android:id="@+id/txttwitter"
+                                            android:textColor="#99AEE3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="AfrikaRima" />
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                 android:paddingLeft="@dimen/_10sdp"
+
+                                   android:paddingRight="@dimen/_10sdp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="@dimen/_30sdp"
+                                            android:layout_height="@dimen/_30sdp"
+                                            android:id="@+id/imgemail"
+                                            android:src="@drawable/mail2"/>
+
+                                        <TextView
+                                            android:id="@+id/txtemail"
+                                            android:textColor="#6C4744"
+                                            android:textStyle="bold"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="rimaafrika4@gmail.com" />
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                              android:padding="@dimen/_10sdp"
+                                android:gravity="center"
+                                android:layout_height="match_parent" >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:paddingRight="@dimen/_20sdp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="@dimen/_30sdp"
+                                            android:id="@+id/imgphone"
+                                            android:layout_height="@dimen/_30sdp"
+                                            android:src="@drawable/phone"/>
+
+                                        <TextView
+                                            android:id="@+id/txtphone"
+                                            android:textColor="#99AEE3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="+263 776 348 601" />
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:paddingRight="@dimen/_20sdp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="@dimen/_30sdp"
+                                            android:layout_height="@dimen/_30sdp"
+                                            android:id="@+id/imgwhatsapp"
+                                            android:src="@drawable/whatsapp"/>
+
+                                        <TextView
+                                            android:id="@+id/txtwhatsapp"
+                                            android:textColor="#99AEE3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="+263 776 348 601" />
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+                            </TableRow>
+
+
+                        </TableLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "101083688468",
+    "project_id": "agriadvisor-cd61d",
+    "storage_bucket": "agriadvisor-cd61d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101083688468:android:3c24299ffad86e43eec101",
+        "android_client_info": {
+          "package_name": "com.example.agribusinessadvisor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101083688468-kpbfffrf0qhfg2vhmq6u094ttf008din.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAC8NXW3QHLssjwOufURfv6zJZ0OQW4Zr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101083688468-kpbfffrf0qhfg2vhmq6u094ttf008din.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
